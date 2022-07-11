@@ -1,24 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aex-Jc-JqZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--감정 다이어리-->
+        <scene sceneID="UWg-WI-HYe">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="EmotionDiaryViewController" id="IQ2-M5-3nT" customClass="EmotionDiaryViewController" customModule="SeSacWeek2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJM-SO-KSR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="종이질감 배경" translatesAutoresizingMaskIntoConstraints="NO" id="XJZ-Hx-sVK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CqQ-ch-poE">
+                                <rect key="frame" x="62" y="287.5" width="290" height="375"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Hj-3aE">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="111.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="55N-05-t7C">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpu-QO-iMN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tpu-QO-iMN" secondAttribute="height" multiplier="1:1" id="Tcy-Lp-22U"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime1"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-Qi-Ir3">
+                                                        <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-OI-s9T">
+                                                <rect key="frame" x="103.5" y="0.0" width="83" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-9Q-ugJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bb8-9Q-ugJ" secondAttribute="height" multiplier="1:1" id="xrc-5i-6dG"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime2"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-sA-jm7">
+                                                        <rect key="frame" x="0.0" y="91" width="83" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Yn-Ng-tQn">
+                                                <rect key="frame" x="206.5" y="0.0" width="83.5" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-LI-593">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="b5G-LI-593" secondAttribute="height" multiplier="1:1" id="bNs-uO-fNV"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime3"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-yh-1Ff">
+                                                        <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jbr-q8-Vxh">
+                                        <rect key="frame" x="0.0" y="131.5" width="290" height="112"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-qq-9K1">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="112"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM0-Uy-yAo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="XM0-Uy-yAo" secondAttribute="height" multiplier="1:1" id="Vd6-MP-aDL"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime4"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분노해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyU-KY-ddy">
+                                                        <rect key="frame" x="0.0" y="91.5" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9kg-zb-UMs">
+                                                <rect key="frame" x="103.5" y="0.0" width="83" height="112"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-hx-4ly">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="59K-hx-4ly" secondAttribute="height" multiplier="1:1" id="bLL-wi-o2d"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime5"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="속상해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kop-Tc-rMk">
+                                                        <rect key="frame" x="0.0" y="91.5" width="83" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rvh-IG-yUM">
+                                                <rect key="frame" x="206.5" y="0.0" width="83.5" height="112"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-cv-bER">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="5qm-cv-bER" secondAttribute="height" multiplier="1:1" id="Zil-6e-n6r"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime6"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8K-RM-OwD">
+                                                        <rect key="frame" x="0.0" y="91.5" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-V7-0gy">
+                                        <rect key="frame" x="0.0" y="263.5" width="290" height="111.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-rP-yBz">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-38-bHC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ISb-38-bHC" secondAttribute="height" multiplier="1:1" id="wph-La-Ay2"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime7"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-xC-Sgf">
+                                                        <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-nA-yKN">
+                                                <rect key="frame" x="103.5" y="0.0" width="83" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-ab-qjp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Bhm-ab-qjp" secondAttribute="height" multiplier="1:1" id="iGT-YE-uWv"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime8"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p75-gM-paH">
+                                                        <rect key="frame" x="0.0" y="91" width="83" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s6i-k5-uGI">
+                                                <rect key="frame" x="206.5" y="0.0" width="83.5" height="111.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-wu-VBw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NoY-wu-VBw" secondAttribute="height" multiplier="1:1" id="hWO-uB-CrA"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="sesac_slime9"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="눈물나" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSH-Je-crp">
+                                                        <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J7E-3e-6Y0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XJZ-Hx-sVK" firstAttribute="leading" secondItem="J7E-3e-6Y0" secondAttribute="leading" id="60p-hF-fnZ"/>
+                            <constraint firstItem="J7E-3e-6Y0" firstAttribute="trailing" secondItem="XJZ-Hx-sVK" secondAttribute="trailing" id="YxX-l9-Kym"/>
+                            <constraint firstAttribute="bottom" secondItem="XJZ-Hx-sVK" secondAttribute="bottom" id="Zca-CK-gUo"/>
+                            <constraint firstItem="CqQ-ch-poE" firstAttribute="width" secondItem="J7E-3e-6Y0" secondAttribute="width" multiplier="0.7" id="ien-nC-0WM"/>
+                            <constraint firstItem="CqQ-ch-poE" firstAttribute="centerX" secondItem="J7E-3e-6Y0" secondAttribute="centerX" id="mdb-B6-Uge"/>
+                            <constraint firstItem="XJZ-Hx-sVK" firstAttribute="top" secondItem="sJM-SO-KSR" secondAttribute="top" id="nYF-YC-Cxa"/>
+                            <constraint firstItem="CqQ-ch-poE" firstAttribute="centerY" secondItem="J7E-3e-6Y0" secondAttribute="centerY" id="sZd-PM-g4V"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="감정 다이어리" id="Nq9-TO-BRC">
+                        <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" id="eav-yD-BAe">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDZ-Tb-4WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-844.92753623188412" y="695.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aQl-zC-oRw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aex-Jc-JqZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YRf-Gb-deH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IQ2-M5-3nT" kind="relationship" relationship="rootViewController" id="M2X-0v-EM1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXq-NO-rq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1755.072463768116" y="695.75892857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="sesac_slime1" width="278" height="258"/>
+        <image name="sesac_slime2" width="278" height="258"/>
+        <image name="sesac_slime3" width="278" height="258"/>
+        <image name="sesac_slime4" width="278" height="258"/>
+        <image name="sesac_slime5" width="278" height="258"/>
+        <image name="sesac_slime6" width="278" height="258"/>
+        <image name="sesac_slime7" width="278" height="258"/>
+        <image name="sesac_slime8" width="278" height="258"/>
+        <image name="sesac_slime9" width="278" height="258"/>
+        <image name="종이질감 배경" width="1526" height="1893"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
