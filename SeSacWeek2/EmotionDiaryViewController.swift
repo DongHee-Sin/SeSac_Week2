@@ -27,7 +27,7 @@ class EmotionDiaryViewController: UIViewController {
 
     // MARK: - Methods
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
-        guard let index = Int(sender.currentTitle ?? "") else { return }
+        let index = sender.tag
         
         guard let temp = emotionalLabels[index].text?.split(separator: " ").map({String($0)}) else { return }
         
