@@ -20,10 +20,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="종이질감 배경" translatesAutoresizingMaskIntoConstraints="NO" id="XJZ-Hx-sVK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CqQ-ch-poE">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CqQ-ch-poE">
                                 <rect key="frame" x="62" y="287.5" width="290" height="375"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Hj-3aE">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Hj-3aE">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="111.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="55N-05-t7C">
@@ -35,9 +35,12 @@
                                                             <constraint firstAttribute="width" secondItem="tpu-QO-iMN" secondAttribute="height" multiplier="1:1" id="Tcy-Lp-22U"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime1"/>
+                                                        <state key="normal" title="0" image="sesac_slime1"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="riQ-XR-SeB"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-Qi-Ir3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvC-Qi-Ir3">
                                                         <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -54,9 +57,12 @@
                                                             <constraint firstAttribute="width" secondItem="bb8-9Q-ugJ" secondAttribute="height" multiplier="1:1" id="xrc-5i-6dG"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime2"/>
+                                                        <state key="normal" title="1" image="sesac_slime2"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="m4K-Bg-cyF"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-sA-jm7">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-sA-jm7">
                                                         <rect key="frame" x="0.0" y="91" width="83" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -73,9 +79,12 @@
                                                             <constraint firstAttribute="width" secondItem="b5G-LI-593" secondAttribute="height" multiplier="1:1" id="bNs-uO-fNV"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime3"/>
+                                                        <state key="normal" title="2" image="sesac_slime3"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="eaW-WD-xuY"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-yh-1Ff">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-yh-1Ff">
                                                         <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -85,7 +94,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jbr-q8-Vxh">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jbr-q8-Vxh">
                                         <rect key="frame" x="0.0" y="131.5" width="290" height="112"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-qq-9K1">
@@ -97,9 +106,12 @@
                                                             <constraint firstAttribute="width" secondItem="XM0-Uy-yAo" secondAttribute="height" multiplier="1:1" id="Vd6-MP-aDL"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime4"/>
+                                                        <state key="normal" title="3" image="sesac_slime4"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="H7n-t4-8kb"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분노해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyU-KY-ddy">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분노해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyU-KY-ddy">
                                                         <rect key="frame" x="0.0" y="91.5" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -116,9 +128,12 @@
                                                             <constraint firstAttribute="width" secondItem="59K-hx-4ly" secondAttribute="height" multiplier="1:1" id="bLL-wi-o2d"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime5"/>
+                                                        <state key="normal" title="4" image="sesac_slime5"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="Ghy-nf-GzT"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="속상해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kop-Tc-rMk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="속상해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kop-Tc-rMk">
                                                         <rect key="frame" x="0.0" y="91.5" width="83" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -135,9 +150,12 @@
                                                             <constraint firstAttribute="width" secondItem="5qm-cv-bER" secondAttribute="height" multiplier="1:1" id="Zil-6e-n6r"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime6"/>
+                                                        <state key="normal" title="5" image="sesac_slime6"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="kgN-0y-IEK"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8K-RM-OwD">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8K-RM-OwD">
                                                         <rect key="frame" x="0.0" y="91.5" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -147,7 +165,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-V7-0gy">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-V7-0gy">
                                         <rect key="frame" x="0.0" y="263.5" width="290" height="111.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-rP-yBz">
@@ -159,9 +177,12 @@
                                                             <constraint firstAttribute="width" secondItem="ISb-38-bHC" secondAttribute="height" multiplier="1:1" id="wph-La-Ay2"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime7"/>
+                                                        <state key="normal" title="6" image="sesac_slime7"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="9gn-Jj-mOp"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-xC-Sgf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-xC-Sgf">
                                                         <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -178,9 +199,12 @@
                                                             <constraint firstAttribute="width" secondItem="Bhm-ab-qjp" secondAttribute="height" multiplier="1:1" id="iGT-YE-uWv"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime8"/>
+                                                        <state key="normal" title="7" image="sesac_slime8"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="2SY-4g-Dbx"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p75-gM-paH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p75-gM-paH">
                                                         <rect key="frame" x="0.0" y="91" width="83" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -197,9 +221,12 @@
                                                             <constraint firstAttribute="width" secondItem="NoY-wu-VBw" secondAttribute="height" multiplier="1:1" id="hWO-uB-CrA"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime9"/>
+                                                        <state key="normal" title="8" image="sesac_slime9"/>
+                                                        <connections>
+                                                            <action selector="emotionButtonTapped:" destination="IQ2-M5-3nT" eventType="touchUpInside" id="cTc-sh-YKe"/>
+                                                        </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="눈물나" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSH-Je-crp">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="눈물나 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSH-Je-crp">
                                                         <rect key="frame" x="0.0" y="91" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -229,6 +256,17 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outletCollection property="emotionalLabels" destination="HvC-Qi-Ir3" collectionClass="NSMutableArray" id="1t7-a8-Z7a"/>
+                        <outletCollection property="emotionalLabels" destination="LAc-sA-jm7" collectionClass="NSMutableArray" id="04K-a4-AYM"/>
+                        <outletCollection property="emotionalLabels" destination="8mq-yh-1Ff" collectionClass="NSMutableArray" id="Fvb-gh-wG5"/>
+                        <outletCollection property="emotionalLabels" destination="DyU-KY-ddy" collectionClass="NSMutableArray" id="acg-ci-kDZ"/>
+                        <outletCollection property="emotionalLabels" destination="kop-Tc-rMk" collectionClass="NSMutableArray" id="igX-UB-6vH"/>
+                        <outletCollection property="emotionalLabels" destination="R8K-RM-OwD" collectionClass="NSMutableArray" id="o2k-X1-LtA"/>
+                        <outletCollection property="emotionalLabels" destination="1Mg-xC-Sgf" collectionClass="NSMutableArray" id="FZz-ij-c0m"/>
+                        <outletCollection property="emotionalLabels" destination="p75-gM-paH" collectionClass="NSMutableArray" id="sab-N5-V5w"/>
+                        <outletCollection property="emotionalLabels" destination="iSH-Je-crp" collectionClass="NSMutableArray" id="Kls-Yj-mIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDZ-Tb-4WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
