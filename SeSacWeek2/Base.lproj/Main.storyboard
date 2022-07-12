@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IQ2-M5-3nT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aex-Jc-JqZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -51,7 +51,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-OI-s9T">
                                                 <rect key="frame" x="103.5" y="0.0" width="83" height="111.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-9Q-ugJ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-9Q-ugJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bb8-9Q-ugJ" secondAttribute="height" multiplier="1:1" id="xrc-5i-6dG"/>
@@ -73,7 +73,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Yn-Ng-tQn">
                                                 <rect key="frame" x="206.5" y="0.0" width="83.5" height="111.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-LI-593">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-LI-593">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="b5G-LI-593" secondAttribute="height" multiplier="1:1" id="bNs-uO-fNV"/>
@@ -100,7 +100,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-qq-9K1">
                                                 <rect key="frame" x="0.0" y="0.0" width="83.5" height="112"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM0-Uy-yAo">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM0-Uy-yAo">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="XM0-Uy-yAo" secondAttribute="height" multiplier="1:1" id="Vd6-MP-aDL"/>
@@ -122,7 +122,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9kg-zb-UMs">
                                                 <rect key="frame" x="103.5" y="0.0" width="83" height="112"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-hx-4ly">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-hx-4ly">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="59K-hx-4ly" secondAttribute="height" multiplier="1:1" id="bLL-wi-o2d"/>
@@ -144,7 +144,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rvh-IG-yUM">
                                                 <rect key="frame" x="206.5" y="0.0" width="83.5" height="112"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-cv-bER">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-cv-bER">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="5qm-cv-bER" secondAttribute="height" multiplier="1:1" id="Zil-6e-n6r"/>
@@ -171,7 +171,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-rP-yBz">
                                                 <rect key="frame" x="0.0" y="0.0" width="83.5" height="111.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-38-bHC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-38-bHC">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ISb-38-bHC" secondAttribute="height" multiplier="1:1" id="wph-La-Ay2"/>
@@ -193,7 +193,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-nA-yKN">
                                                 <rect key="frame" x="103.5" y="0.0" width="83" height="111.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-ab-qjp">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-ab-qjp">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Bhm-ab-qjp" secondAttribute="height" multiplier="1:1" id="iGT-YE-uWv"/>
@@ -215,7 +215,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s6i-k5-uGI">
                                                 <rect key="frame" x="206.5" y="0.0" width="83.5" height="111.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-wu-VBw">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-wu-VBw">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NoY-wu-VBw" secondAttribute="height" multiplier="1:1" id="hWO-uB-CrA"/>
@@ -257,15 +257,24 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outletCollection property="emotionalLabels" destination="HvC-Qi-Ir3" collectionClass="NSMutableArray" id="1t7-a8-Z7a"/>
-                        <outletCollection property="emotionalLabels" destination="LAc-sA-jm7" collectionClass="NSMutableArray" id="04K-a4-AYM"/>
-                        <outletCollection property="emotionalLabels" destination="8mq-yh-1Ff" collectionClass="NSMutableArray" id="Fvb-gh-wG5"/>
-                        <outletCollection property="emotionalLabels" destination="DyU-KY-ddy" collectionClass="NSMutableArray" id="acg-ci-kDZ"/>
-                        <outletCollection property="emotionalLabels" destination="kop-Tc-rMk" collectionClass="NSMutableArray" id="igX-UB-6vH"/>
-                        <outletCollection property="emotionalLabels" destination="R8K-RM-OwD" collectionClass="NSMutableArray" id="o2k-X1-LtA"/>
-                        <outletCollection property="emotionalLabels" destination="1Mg-xC-Sgf" collectionClass="NSMutableArray" id="FZz-ij-c0m"/>
-                        <outletCollection property="emotionalLabels" destination="p75-gM-paH" collectionClass="NSMutableArray" id="sab-N5-V5w"/>
-                        <outletCollection property="emotionalLabels" destination="iSH-Je-crp" collectionClass="NSMutableArray" id="Kls-Yj-mIg"/>
+                        <outletCollection property="emotionalLabelList" destination="HvC-Qi-Ir3" collectionClass="NSMutableArray" id="1t7-a8-Z7a"/>
+                        <outletCollection property="emotionalLabelList" destination="LAc-sA-jm7" collectionClass="NSMutableArray" id="04K-a4-AYM"/>
+                        <outletCollection property="emotionalLabelList" destination="8mq-yh-1Ff" collectionClass="NSMutableArray" id="Fvb-gh-wG5"/>
+                        <outletCollection property="emotionalLabelList" destination="DyU-KY-ddy" collectionClass="NSMutableArray" id="acg-ci-kDZ"/>
+                        <outletCollection property="emotionalLabelList" destination="kop-Tc-rMk" collectionClass="NSMutableArray" id="igX-UB-6vH"/>
+                        <outletCollection property="emotionalLabelList" destination="R8K-RM-OwD" collectionClass="NSMutableArray" id="o2k-X1-LtA"/>
+                        <outletCollection property="emotionalLabelList" destination="1Mg-xC-Sgf" collectionClass="NSMutableArray" id="FZz-ij-c0m"/>
+                        <outletCollection property="emotionalLabelList" destination="p75-gM-paH" collectionClass="NSMutableArray" id="sab-N5-V5w"/>
+                        <outletCollection property="emotionalLabelList" destination="iSH-Je-crp" collectionClass="NSMutableArray" id="Kls-Yj-mIg"/>
+                        <outletCollection property="emotionButtonList" destination="tpu-QO-iMN" collectionClass="NSMutableArray" id="O62-Ay-ecB"/>
+                        <outletCollection property="emotionButtonList" destination="bb8-9Q-ugJ" collectionClass="NSMutableArray" id="b3x-9P-LTp"/>
+                        <outletCollection property="emotionButtonList" destination="b5G-LI-593" collectionClass="NSMutableArray" id="Tki-wt-R8s"/>
+                        <outletCollection property="emotionButtonList" destination="XM0-Uy-yAo" collectionClass="NSMutableArray" id="4rP-fA-APe"/>
+                        <outletCollection property="emotionButtonList" destination="59K-hx-4ly" collectionClass="NSMutableArray" id="2rd-eK-3d6"/>
+                        <outletCollection property="emotionButtonList" destination="5qm-cv-bER" collectionClass="NSMutableArray" id="ASp-mP-9hh"/>
+                        <outletCollection property="emotionButtonList" destination="ISb-38-bHC" collectionClass="NSMutableArray" id="GnY-h2-K3J"/>
+                        <outletCollection property="emotionButtonList" destination="Bhm-ab-qjp" collectionClass="NSMutableArray" id="QcQ-lB-0Py"/>
+                        <outletCollection property="emotionButtonList" destination="NoY-wu-VBw" collectionClass="NSMutableArray" id="gZ2-J9-9r7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDZ-Tb-4WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

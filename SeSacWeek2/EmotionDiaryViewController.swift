@@ -10,7 +10,9 @@ import UIKit
 class EmotionDiaryViewController: UIViewController {
 
     // MARK: - Propertys
-    @IBOutlet var emotionalLabels: [UILabel]!
+    @IBOutlet var emotionalLabelList: [UILabel]!
+    
+    @IBOutlet var emotionButtonList: [UIButton]!
     
     
     
@@ -18,10 +20,12 @@ class EmotionDiaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emotionalLabels.forEach({
+        emotionalLabelList.forEach({
             $0.adjustsFontSizeToFitWidth = true
             $0.minimumScaleFactor = 0.5
         })
+        
+        addTag(emotionButtonList)
     }
 
 
@@ -29,21 +33,29 @@ class EmotionDiaryViewController: UIViewController {
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
         let index = sender.tag
         
-        guard let temp = emotionalLabels[index].text?.split(separator: " ").map({String($0)}) else { return }
+        guard let temp = emotionalLabelList[index].text?.split(separator: " ").map({String($0)}) else { return }
         
         guard let count = Int(temp[1]) else { return }
         
-        print("\(temp[0]) 눌림")
-        
         showAlertController()
         
-        emotionalLabels[index].text = "\(temp[0]) \(String(count + 1))"
+        emotionalLabelList[index].text = "\(temp[0]) \(String(count + 1))"
+    }
+    
+    
+    func addTag(_ list: [UIView]) {
+        var n: Int = 0
+        
+        list.forEach({
+            $0.tag = n
+            n += 1
+        })
     }
     
     
     func showAlertController() {
         // 1. 흰 바탕 : UIAlertController
-        let alert = UIAlertController(title: "타이틀", message: "여기는 메시지가 들어갑니다", preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: "Count 증가시키기", preferredStyle: .alert)
         
         // 2. 버튼 만들기
         let delete = UIAlertAction(title: "삭제하기", style: .destructive, handler: nil)
