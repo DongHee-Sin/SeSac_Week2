@@ -13,7 +13,6 @@
 		D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */; };
 		D0B0AD51287BA41300492918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD4F287BA41300492918 /* Main.storyboard */; };
 		D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD52287BA41400492918 /* Assets.xcassets */; };
-		D0B0AD56287BA41400492918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD54287BA41400492918 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDiaryViewController.swift; sourceTree = "<group>"; };
 		D0B0AD50287BA41300492918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0B0AD52287BA41400492918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0B0AD55287BA41400492918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0B0AD57287BA41400492918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
-				D0B0AD54287BA41400492918 /* LaunchScreen.storyboard */,
 				D0B0AD57287BA41400492918 /* Info.plist */,
 			);
 			path = SeSacWeek2;
@@ -128,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B0AD56287BA41400492918 /* LaunchScreen.storyboard in Resources */,
 				D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */,
 				D0B0AD51287BA41300492918 /* Main.storyboard in Resources */,
 			);
@@ -157,14 +153,6 @@
 				D0B0AD50287BA41300492918 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D0B0AD54287BA41400492918 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0B0AD55287BA41400492918 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +282,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSacWeek2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,7 +310,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSacWeek2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
