@@ -14,32 +14,42 @@ class EmotionDiaryViewController: UIViewController {
     
     @IBOutlet var emotionButtonList: [UIButton]!
     
+    var emotionCountList: [Int] = Array(repeating: 0, count: 9)
+    
+    var emotionTitleList: [String] = ["행복해", "사랑해", "좋아해", "분노해", "속상해", "우울해", "심심해", "당황해", "눈물나"]
+    
+    
     
     
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+    }
+
+
+    
+    // MARK: - Methods
+    @IBAction func emotionButtonTapped(_ sender: UIButton) {
+        let index = sender.tag
+        
+        emotionCountList[index] += 1
+        emotionalLabelList[index].text = getLabelTextByIndex(index)
+        
+        showAlertController()
+    }
+    
+    
+    func setupUI() {
         emotionalLabelList.forEach({
             $0.adjustsFontSizeToFitWidth = true
             $0.minimumScaleFactor = 0.5
         })
         
+        settingLabelText()
+        
         addTag(emotionButtonList)
-    }
-
-
-    // MARK: - Methods
-    @IBAction func emotionButtonTapped(_ sender: UIButton) {
-        let index = sender.tag
-        
-        guard let temp = emotionalLabelList[index].text?.split(separator: " ").map({String($0)}) else { return }
-        
-        guard let count = Int(temp[1]) else { return }
-        
-        showAlertController()
-        
-        emotionalLabelList[index].text = "\(temp[0]) \(String(count + 1))"
     }
     
     
@@ -47,6 +57,18 @@ class EmotionDiaryViewController: UIViewController {
         for (index, view) in list.enumerated() {
             view.tag = index
         }
+    }
+    
+    
+    func settingLabelText() {
+        for (index, label) in emotionalLabelList.enumerated() {
+            label.text = getLabelTextByIndex(index)
+        }
+    }
+    
+    
+    func getLabelTextByIndex(_ index: Int) -> String {
+        return "\(emotionTitleList[index]) \(emotionCountList[index])"
     }
     
     
