@@ -44,12 +44,9 @@ class EmotionDiaryViewController: UIViewController {
     
     
     func addTag(_ list: [UIView]) {
-        var n: Int = 0
-        
-        list.forEach({
-            $0.tag = n
-            n += 1
-        })
+        for (index, view) in list.enumerated() {
+            view.tag = index
+        }
     }
     
     
