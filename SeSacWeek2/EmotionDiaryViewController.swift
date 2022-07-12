@@ -14,9 +14,7 @@ class EmotionDiaryViewController: UIViewController {
     
     @IBOutlet var emotionButtonList: [UIButton]!
     
-    var emotionCountList: [Int] = Array(repeating: 0, count: 9)
-    
-    var emotionTitleList: [String] = ["행복해", "사랑해", "좋아해", "분노해", "속상해", "우울해", "심심해", "당황해", "눈물나"]
+    var emotionList: [Emotion] = []
     
     
     
@@ -34,10 +32,11 @@ class EmotionDiaryViewController: UIViewController {
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
         let index = sender.tag
         
-        emotionCountList[index] += 1
+        emotionList[index].increasingCount()
+        
         emotionalLabelList[index].text = getLabelTextByIndex(index)
         
-        showAlertController()
+        //showAlertController()
     }
     
     
@@ -47,9 +46,14 @@ class EmotionDiaryViewController: UIViewController {
             $0.minimumScaleFactor = 0.5
         })
         
-        settingLabelText()
+        EmotionType.allCases.forEach({
+            let emotion = Emotion(title: $0.rawValue)
+            emotionList.append(emotion)
+        })
         
         addTag(emotionButtonList)
+        
+        settingLabelText()
     }
     
     
@@ -68,8 +72,10 @@ class EmotionDiaryViewController: UIViewController {
     
     
     func getLabelTextByIndex(_ index: Int) -> String {
-        return "\(emotionTitleList[index]) \(emotionCountList[index])"
+        return "\(emotionList[index].emotionTitle) \(emotionList[index].emotionCount)"
     }
+    
+    
     
     
     func showAlertController() {

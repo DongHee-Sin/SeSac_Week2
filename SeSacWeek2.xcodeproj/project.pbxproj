@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0955ED9287D8C400083AFC2 /* EmotionType.swift */; };
 		D0AC1EA5287D213400B289EB /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */; };
 		D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD49287BA41300492918 /* AppDelegate.swift */; };
 		D0B0AD4C287BA41300492918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD4B287BA41300492918 /* SceneDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0955ED9287D8C400083AFC2 /* EmotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionType.swift; sourceTree = "<group>"; };
 		D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		D0B0AD46287BA41300492918 /* SeSacWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B0AD49287BA41300492918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D0B0AD49287BA41300492918 /* AppDelegate.swift */,
 				D0B0AD4B287BA41300492918 /* SceneDelegate.swift */,
 				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
+				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */,
 				D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */,
 				D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */,
 				D0B0AD4C287BA41300492918 /* SceneDelegate.swift in Sources */,
