@@ -337,7 +337,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="a0X-83-fWd" firstAttribute="top" secondItem="rJd-bA-EGz" secondAttribute="top" id="52D-U0-7Vz"/>
                                                     <constraint firstItem="a8r-zU-n52" firstAttribute="top" secondItem="rJd-bA-EGz" secondAttribute="top" constant="10" id="9LN-cv-6cs"/>
@@ -369,7 +368,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="L39-Dr-oEb" firstAttribute="centerX" secondItem="rZm-MB-yrr" secondAttribute="centerX" id="Aye-ph-k6v"/>
                                                     <constraint firstItem="IQT-5D-035" firstAttribute="leading" secondItem="rZm-MB-yrr" secondAttribute="leading" constant="10" id="Dol-Sw-43s"/>
@@ -405,7 +403,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="bnf-Wc-ApP" firstAttribute="centerX" secondItem="v7t-Jf-2zj" secondAttribute="centerX" id="6Zr-wH-PrL"/>
                                                     <constraint firstAttribute="trailing" secondItem="gzp-j8-MBe" secondAttribute="trailing" id="9AA-HD-wyE"/>
@@ -436,7 +433,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="pqI-Jo-PlG" firstAttribute="top" secondItem="y44-ES-ukQ" secondAttribute="top" constant="10" id="2IR-9p-pKU"/>
                                                     <constraint firstItem="j7t-qB-Nxo" firstAttribute="top" secondItem="y44-ES-ukQ" secondAttribute="top" id="2JL-JN-auU"/>
@@ -465,7 +461,17 @@
                             <constraint firstItem="YuT-XA-X00" firstAttribute="bottom" secondItem="yup-UY-X5W" secondAttribute="bottom" constant="15" id="cT2-5k-CTO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="기념일 계산기" image="calendar.day.timeline.left" catalog="system" id="RSG-mC-YgO"/>
+                    <tabBarItem key="tabBarItem" title="기념일 계산기" image="pencil.circle" catalog="system" id="RSG-mC-YgO"/>
+                    <connections>
+                        <outletCollection property="imageList" destination="a0X-83-fWd" collectionClass="NSMutableArray" id="Q1M-F3-xJS"/>
+                        <outletCollection property="imageList" destination="gzp-j8-MBe" collectionClass="NSMutableArray" id="QJS-dc-AcF"/>
+                        <outletCollection property="imageList" destination="gZM-wE-EzX" collectionClass="NSMutableArray" id="IA0-Pm-52Z"/>
+                        <outletCollection property="imageList" destination="j7t-qB-Nxo" collectionClass="NSMutableArray" id="x23-7o-dBH"/>
+                        <outletCollection property="forShadowViewList" destination="rJd-bA-EGz" collectionClass="NSMutableArray" id="XxI-hw-fLx"/>
+                        <outletCollection property="forShadowViewList" destination="rZm-MB-yrr" collectionClass="NSMutableArray" id="kqA-bW-gM3"/>
+                        <outletCollection property="forShadowViewList" destination="v7t-Jf-2zj" collectionClass="NSMutableArray" id="NZE-ip-WUb"/>
+                        <outletCollection property="forShadowViewList" destination="y44-ES-ukQ" collectionClass="NSMutableArray" id="g24-Lb-QPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewC-7a-4EV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -526,7 +532,7 @@
                             <constraint firstItem="9vB-88-o6j" firstAttribute="trailing" secondItem="Omm-HC-8ce" secondAttribute="trailing" constant="20" id="iof-lR-qzn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="세그먼트 컨트롤" image="iphone.homebutton" catalog="system" id="fIB-Cs-V6x"/>
+                    <tabBarItem key="tabBarItem" title="세그먼트 컨트롤" image="trash.circle" catalog="system" id="fIB-Cs-V6x"/>
                     <connections>
                         <outlet property="resultLabel" destination="UDi-hl-FE4" id="HRi-Px-aJl"/>
                         <outlet property="segmentControl" destination="Fg2-fF-mGN" id="aoB-7E-VQe"/>
@@ -560,12 +566,11 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cake" width="200" height="267"/>
-        <image name="calendar.day.timeline.left" catalog="system" width="128" height="91"/>
         <image name="doughnut" width="200" height="251"/>
         <image name="icecream" width="200" height="300"/>
-        <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="macaroon" width="200" height="300"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sesac_slime1" width="278" height="258"/>
         <image name="sesac_slime2" width="278" height="258"/>
@@ -576,6 +581,7 @@
         <image name="sesac_slime7" width="278" height="258"/>
         <image name="sesac_slime8" width="278" height="258"/>
         <image name="sesac_slime9" width="278" height="258"/>
+        <image name="trash.circle" catalog="system" width="128" height="121"/>
         <image name="종이질감 배경" width="1526" height="1893"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
