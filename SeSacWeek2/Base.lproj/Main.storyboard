@@ -304,18 +304,172 @@
         <!--기념일 계산기-->
         <scene sceneID="ea0-zT-GYT">
             <objects>
-                <viewController id="9tq-VX-80t" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnniversaryCalculatorViewController" id="9tq-VX-80t" customClass="AnniversaryCalculatorViewController" customModule="SeSacWeek2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fov-f9-Nb3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Ld-qh8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="355"/>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yup-UY-X5W">
+                                <rect key="frame" x="15" y="414" width="384" height="384"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dJ4-6Y-BbC">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="384"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-bA-EGz">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icecream" translatesAutoresizingMaskIntoConstraints="NO" id="a0X-83-fWd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-zU-n52">
+                                                        <rect key="frame" x="10" y="10" width="63" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021년  03월 27일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1l-og-igM">
+                                                        <rect key="frame" x="25" y="82" width="134.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="a0X-83-fWd" firstAttribute="top" secondItem="rJd-bA-EGz" secondAttribute="top" id="52D-U0-7Vz"/>
+                                                    <constraint firstItem="a8r-zU-n52" firstAttribute="top" secondItem="rJd-bA-EGz" secondAttribute="top" constant="10" id="9LN-cv-6cs"/>
+                                                    <constraint firstItem="w1l-og-igM" firstAttribute="centerY" secondItem="rJd-bA-EGz" secondAttribute="centerY" id="L3x-2d-ODe"/>
+                                                    <constraint firstAttribute="width" secondItem="rJd-bA-EGz" secondAttribute="height" multiplier="1:1" id="Rw6-50-Ubq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="a0X-83-fWd" secondAttribute="trailing" id="WTX-sB-AGm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="a0X-83-fWd" secondAttribute="bottom" id="d8o-cP-gC5"/>
+                                                    <constraint firstItem="w1l-og-igM" firstAttribute="centerX" secondItem="rJd-bA-EGz" secondAttribute="centerX" id="fwi-pc-elr"/>
+                                                    <constraint firstItem="a8r-zU-n52" firstAttribute="leading" secondItem="rJd-bA-EGz" secondAttribute="leading" constant="10" id="gsx-6b-o3b"/>
+                                                    <constraint firstItem="a0X-83-fWd" firstAttribute="leading" secondItem="rJd-bA-EGz" secondAttribute="leading" id="qnZ-Xx-OHV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZm-MB-yrr">
+                                                <rect key="frame" x="0.0" y="199.5" width="184.5" height="184.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doughnut" translatesAutoresizingMaskIntoConstraints="NO" id="gZM-wE-EzX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQT-5D-035">
+                                                        <rect key="frame" x="10" y="10" width="66.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021년  03월 27일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L39-Dr-oEb">
+                                                        <rect key="frame" x="25" y="82" width="134.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="L39-Dr-oEb" firstAttribute="centerX" secondItem="rZm-MB-yrr" secondAttribute="centerX" id="Aye-ph-k6v"/>
+                                                    <constraint firstItem="IQT-5D-035" firstAttribute="leading" secondItem="rZm-MB-yrr" secondAttribute="leading" constant="10" id="Dol-Sw-43s"/>
+                                                    <constraint firstItem="L39-Dr-oEb" firstAttribute="centerY" secondItem="rZm-MB-yrr" secondAttribute="centerY" id="Eh0-an-OUe"/>
+                                                    <constraint firstItem="IQT-5D-035" firstAttribute="top" secondItem="rZm-MB-yrr" secondAttribute="top" constant="10" id="Zbk-c9-Y70"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gZM-wE-EzX" secondAttribute="trailing" id="rVj-53-6Fq"/>
+                                                    <constraint firstItem="gZM-wE-EzX" firstAttribute="leading" secondItem="rZm-MB-yrr" secondAttribute="leading" id="vlQ-67-XiL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gZM-wE-EzX" secondAttribute="bottom" id="xEO-Ob-HBr"/>
+                                                    <constraint firstItem="gZM-wE-EzX" firstAttribute="top" secondItem="rZm-MB-yrr" secondAttribute="top" id="xWR-k1-Whe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="o9d-lN-OML">
+                                        <rect key="frame" x="199.5" y="0.0" width="184.5" height="384"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-Jf-2zj">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macaroon" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-j8-MBe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPk-cI-cTl">
+                                                        <rect key="frame" x="10" y="10" width="66" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021년  03월 27일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnf-Wc-ApP">
+                                                        <rect key="frame" x="25" y="82" width="134.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bnf-Wc-ApP" firstAttribute="centerX" secondItem="v7t-Jf-2zj" secondAttribute="centerX" id="6Zr-wH-PrL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gzp-j8-MBe" secondAttribute="trailing" id="9AA-HD-wyE"/>
+                                                    <constraint firstItem="UPk-cI-cTl" firstAttribute="top" secondItem="v7t-Jf-2zj" secondAttribute="top" constant="10" id="I0v-XI-USZ"/>
+                                                    <constraint firstItem="gzp-j8-MBe" firstAttribute="top" secondItem="v7t-Jf-2zj" secondAttribute="top" id="MOt-lP-2mN"/>
+                                                    <constraint firstItem="UPk-cI-cTl" firstAttribute="leading" secondItem="v7t-Jf-2zj" secondAttribute="leading" constant="10" id="YLn-VZ-Nq0"/>
+                                                    <constraint firstItem="bnf-Wc-ApP" firstAttribute="centerY" secondItem="v7t-Jf-2zj" secondAttribute="centerY" id="haW-QR-Grg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gzp-j8-MBe" secondAttribute="bottom" id="pUF-8E-D9p"/>
+                                                    <constraint firstItem="gzp-j8-MBe" firstAttribute="leading" secondItem="v7t-Jf-2zj" secondAttribute="leading" id="vzq-2Z-rz8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y44-ES-ukQ">
+                                                <rect key="frame" x="0.0" y="199.5" width="184.5" height="184.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="j7t-qB-Nxo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="184.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqI-Jo-PlG">
+                                                        <rect key="frame" x="10" y="10" width="66.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021년  03월 27일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-Hz-zkA">
+                                                        <rect key="frame" x="25" y="82" width="134.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pqI-Jo-PlG" firstAttribute="top" secondItem="y44-ES-ukQ" secondAttribute="top" constant="10" id="2IR-9p-pKU"/>
+                                                    <constraint firstItem="j7t-qB-Nxo" firstAttribute="top" secondItem="y44-ES-ukQ" secondAttribute="top" id="2JL-JN-auU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j7t-qB-Nxo" secondAttribute="trailing" id="Kw3-Xo-Ggw"/>
+                                                    <constraint firstItem="j7t-qB-Nxo" firstAttribute="leading" secondItem="y44-ES-ukQ" secondAttribute="leading" id="UAh-fg-OyE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="j7t-qB-Nxo" secondAttribute="bottom" id="WUv-ba-zdV"/>
+                                                    <constraint firstItem="W2x-Hz-zkA" firstAttribute="centerX" secondItem="y44-ES-ukQ" secondAttribute="centerX" id="dUK-NK-KiQ"/>
+                                                    <constraint firstItem="pqI-Jo-PlG" firstAttribute="leading" secondItem="y44-ES-ukQ" secondAttribute="leading" constant="10" id="q4u-XM-yNg"/>
+                                                    <constraint firstItem="W2x-Hz-zkA" firstAttribute="centerY" secondItem="y44-ES-ukQ" secondAttribute="centerY" id="xaA-h5-Yi9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YuT-XA-X00"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="APD-Ld-qh8" firstAttribute="leading" secondItem="YuT-XA-X00" secondAttribute="leading" id="86k-os-4gM"/>
+                            <constraint firstItem="APD-Ld-qh8" firstAttribute="top" secondItem="YuT-XA-X00" secondAttribute="top" id="G5V-Dz-1yv"/>
+                            <constraint firstItem="yup-UY-X5W" firstAttribute="top" secondItem="APD-Ld-qh8" secondAttribute="bottom" constant="15" id="HrM-7B-fj3"/>
+                            <constraint firstItem="APD-Ld-qh8" firstAttribute="trailing" secondItem="YuT-XA-X00" secondAttribute="trailing" id="Qn3-zO-eq2"/>
+                            <constraint firstItem="yup-UY-X5W" firstAttribute="leading" secondItem="YuT-XA-X00" secondAttribute="leading" constant="15" id="ZhE-VX-rnf"/>
+                            <constraint firstItem="YuT-XA-X00" firstAttribute="trailing" secondItem="yup-UY-X5W" secondAttribute="trailing" constant="15" id="Zxg-h6-IdX"/>
+                            <constraint firstItem="YuT-XA-X00" firstAttribute="bottom" secondItem="yup-UY-X5W" secondAttribute="bottom" constant="15" id="cT2-5k-CTO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="기념일 계산기" image="calendar.day.timeline.left" catalog="system" id="RSG-mC-YgO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewC-7a-4EV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-880" y="717"/>
+            <point key="canvasLocation" x="-881.15942028985512" y="716.51785714285711"/>
         </scene>
         <!--세그먼트 컨트롤-->
         <scene sceneID="vCY-Ib-4MI">
@@ -405,9 +559,13 @@
         <segue reference="vEy-N0-TWh"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="cake" width="200" height="267"/>
         <image name="calendar.day.timeline.left" catalog="system" width="128" height="91"/>
+        <image name="doughnut" width="200" height="251"/>
+        <image name="icecream" width="200" height="300"/>
         <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="macaroon" width="200" height="300"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sesac_slime1" width="278" height="258"/>
         <image name="sesac_slime2" width="278" height="258"/>

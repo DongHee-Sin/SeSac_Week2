@@ -14,6 +14,7 @@
 		D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */; };
 		D0B0AD51287BA41300492918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD4F287BA41300492918 /* Main.storyboard */; };
 		D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD52287BA41400492918 /* Assets.xcassets */; };
+		D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D0B0AD50287BA41300492918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0B0AD52287BA41400492918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B0AD57287BA41400492918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
 				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
+				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
 				D0B0AD57287BA41400492918 /* Info.plist */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */,
+				D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */,
 				D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */,
 				D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */,
 				D0B0AD4C287BA41300492918 /* SceneDelegate.swift in Sources */,
