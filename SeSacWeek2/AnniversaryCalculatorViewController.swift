@@ -9,15 +9,12 @@ import UIKit
 
 class AnniversaryCalculatorViewController: UIViewController {
 
-    // MARK: - Propertys
-    
-    
-    
-    
     // MARK: - Outlet
     @IBOutlet var forShadowViewList: [UIView]!
     
     @IBOutlet var imageList: [UIImageView]!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     
     
@@ -31,11 +28,14 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     
     
+    
     // MARK: - Methods
     func setupUI() {
         imageList.forEach({ settingImage($0) })
         
         forShadowViewList.forEach({ addShadow($0, color: UIColor.black.cgColor, width: 0, height: 0, alpha: 0.3, radius: 10) })
+        
+        settingDatePicker(datePicker)
     }
     
     
@@ -53,5 +53,13 @@ class AnniversaryCalculatorViewController: UIViewController {
         to.layer.shadowRadius = radius
         to.layer.shadowOffset = CGSize(width: width, height: height)
         to.layer.shadowPath = nil
+    }
+    
+    
+    // Date Picker 설정
+    func settingDatePicker(_ picker: UIDatePicker) {
+        if #available(iOS 14.0, *) {
+            picker.preferredDatePickerStyle = .inline
+        }
     }
 }

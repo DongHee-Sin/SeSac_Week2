@@ -309,7 +309,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Ld-qh8">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Ld-qh8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="355"/>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yup-UY-X5W">
@@ -463,6 +463,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="기념일 계산기" image="pencil.circle" catalog="system" id="RSG-mC-YgO"/>
                     <connections>
+                        <outlet property="datePicker" destination="APD-Ld-qh8" id="9GZ-K8-sZ1"/>
                         <outletCollection property="imageList" destination="a0X-83-fWd" collectionClass="NSMutableArray" id="Q1M-F3-xJS"/>
                         <outletCollection property="imageList" destination="gzp-j8-MBe" collectionClass="NSMutableArray" id="QJS-dc-AcF"/>
                         <outletCollection property="imageList" destination="gZM-wE-EzX" collectionClass="NSMutableArray" id="IA0-Pm-52Z"/>
