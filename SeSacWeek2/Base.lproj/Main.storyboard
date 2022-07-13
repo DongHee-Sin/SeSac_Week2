@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aex-Jc-JqZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9nQ-Ev-FER">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CqQ-ch-poE">
-                                <rect key="frame" x="62" y="287.5" width="290" height="375"/>
+                                <rect key="frame" x="62" y="241" width="290" height="375"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Hj-3aE">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="111.5"/>
@@ -251,6 +251,7 @@
                             <constraint firstItem="CqQ-ch-poE" firstAttribute="centerY" secondItem="J7E-3e-6Y0" secondAttribute="centerY" id="sZd-PM-g4V"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="감정 다이어리" image="person.fill" catalog="system" id="5Iw-Xf-z7I"/>
                     <navigationItem key="navigationItem" title="감정 다이어리" id="Nq9-TO-BRC">
                         <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" id="eav-yD-BAe">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,9 +280,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDZ-Tb-4WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845" y="717"/>
+            <point key="canvasLocation" x="-1796" y="717"/>
         </scene>
-        <!--Segmented View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="zU8-hi-lum">
+            <objects>
+                <tabBarController id="9nQ-Ev-FER" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F9M-Uc-sTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IQ2-M5-3nT" kind="relationship" relationship="viewControllers" id="vEy-N0-TWh"/>
+                        <segue destination="9tq-VX-80t" kind="relationship" relationship="viewControllers" id="J2Z-1V-hbC"/>
+                        <segue destination="jL3-pP-Qpz" kind="relationship" relationship="viewControllers" id="yJx-cb-Tkq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkD-fm-e1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="-80"/>
+        </scene>
+        <!--기념일 계산기-->
+        <scene sceneID="ea0-zT-GYT">
+            <objects>
+                <viewController id="9tq-VX-80t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fov-f9-Nb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YuT-XA-X00"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="기념일 계산기" image="calendar.day.timeline.left" catalog="system" id="RSG-mC-YgO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewC-7a-4EV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="717"/>
+        </scene>
+        <!--세그먼트 컨트롤-->
         <scene sceneID="vCY-Ib-4MI">
             <objects>
                 <viewController storyboardIdentifier="SegmentedViewController" id="jL3-pP-Qpz" customClass="SegmentedViewController" customModule="SeSacWeek2" customModuleProvider="target" sceneMemberID="viewController">
@@ -336,6 +372,7 @@
                             <constraint firstItem="9vB-88-o6j" firstAttribute="trailing" secondItem="Omm-HC-8ce" secondAttribute="trailing" constant="20" id="iof-lR-qzn"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="세그먼트 컨트롤" image="iphone.homebutton" catalog="system" id="fIB-Cs-V6x"/>
                     <connections>
                         <outlet property="resultLabel" destination="UDi-hl-FE4" id="HRi-Px-aJl"/>
                         <outlet property="segmentControl" destination="Fg2-fF-mGN" id="aoB-7E-VQe"/>
@@ -343,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5c-1C-gyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-844.92753623188412" y="1396.875"/>
+            <point key="canvasLocation" x="101" y="717"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aQl-zC-oRw">
@@ -361,11 +398,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXq-NO-rq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1755.072463768116" y="695.75892857142856"/>
+            <point key="canvasLocation" x="-2633" y="717"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vEy-N0-TWh"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="calendar.day.timeline.left" catalog="system" width="128" height="91"/>
+        <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sesac_slime1" width="278" height="258"/>
         <image name="sesac_slime2" width="278" height="258"/>
         <image name="sesac_slime3" width="278" height="258"/>

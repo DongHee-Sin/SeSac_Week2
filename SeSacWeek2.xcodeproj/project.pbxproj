@@ -58,8 +58,7 @@
 		D0B0AD48287BA41300492918 /* SeSacWeek2 */ = {
 			isa = PBXGroup;
 			children = (
-				D0B0AD49287BA41300492918 /* AppDelegate.swift */,
-				D0B0AD4B287BA41300492918 /* SceneDelegate.swift */,
+				D0B3A701287E931D0051BB8E /* AppLifeCycle */,
 				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
 				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
@@ -68,6 +67,15 @@
 				D0B0AD57287BA41400492918 /* Info.plist */,
 			);
 			path = SeSacWeek2;
+			sourceTree = "<group>";
+		};
+		D0B3A701287E931D0051BB8E /* AppLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0AD49287BA41300492918 /* AppDelegate.swift */,
+				D0B0AD4B287BA41300492918 /* SceneDelegate.swift */,
+			);
+			path = AppLifeCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
