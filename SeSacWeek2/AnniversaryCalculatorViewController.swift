@@ -107,6 +107,11 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
+    func StringToDate(_ string: String) -> Date? {
+        return dateFormatter.date(from: string)
+    }
+    
+    
     func add100Day(_ date: Date) -> Date {
         return date.addingTimeInterval(60 * 60 * 24 * 100)
     }
