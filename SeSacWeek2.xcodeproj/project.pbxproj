@@ -80,21 +80,21 @@
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
 				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
-				D0B31FC7287FB25800570C5D /* New Group */,
+				D0B31FC7287FB25800570C5D /* storyboard reference */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
 				D0B0AD57287BA41400492918 /* Info.plist */,
 			);
 			path = SeSacWeek2;
 			sourceTree = "<group>";
 		};
-		D0B31FC7287FB25800570C5D /* New Group */ = {
+		D0B31FC7287FB25800570C5D /* storyboard reference */ = {
 			isa = PBXGroup;
 			children = (
 				D0B31FC5287FB21300570C5D /* Search.storyboard */,
 				D0B31FC8287FB26000570C5D /* Setting.storyboard */,
 				D0298DFE287FEFE90003A4BE /* SearchViewController.swift */,
 			);
-			path = "New Group";
+			path = "storyboard reference";
 			sourceTree = "<group>";
 		};
 		D0B3A701287E931D0051BB8E /* AppLifeCycle */ = {
