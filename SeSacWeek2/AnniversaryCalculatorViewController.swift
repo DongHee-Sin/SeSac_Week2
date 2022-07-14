@@ -55,6 +55,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     func settingLabel(_ label: UILabel) {
         label.textAlignment = .center
         label.numberOfLines = 2
+        label.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
     }
     
     
