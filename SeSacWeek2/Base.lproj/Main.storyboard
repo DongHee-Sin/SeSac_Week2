@@ -309,7 +309,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Ld-qh8">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Ld-qh8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="355"/>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yup-UY-X5W">
@@ -503,9 +503,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-hl-FE4">
-                                <rect key="frame" x="20" y="395" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-hl-FE4">
+                                <rect key="frame" x="186.5" y="437.5" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -522,14 +521,26 @@
                                     <action selector="segmentControlValueChanged:" destination="jL3-pP-Qpz" eventType="valueChanged" id="slG-Tn-Y5v"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biU-17-aPI">
+                                <rect key="frame" x="171.5" y="488.5" width="71" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="VC 이동"/>
+                                <connections>
+                                    <segue destination="lRa-yl-wRJ" kind="presentation" modalPresentationStyle="overFullScreen" id="hDZ-Fo-sDx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9vB-88-o6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Omm-HC-8ce" firstAttribute="leading" secondItem="aKs-gq-Ups" secondAttribute="trailing" constant="20" id="4D4-WF-GQ0"/>
+                            <constraint firstItem="biU-17-aPI" firstAttribute="top" secondItem="UDi-hl-FE4" secondAttribute="bottom" constant="30" id="6qo-MY-zdD"/>
                             <constraint firstItem="aKs-gq-Ups" firstAttribute="leading" secondItem="9vB-88-o6j" secondAttribute="leading" constant="20" id="89Q-Tp-rHM"/>
+                            <constraint firstItem="biU-17-aPI" firstAttribute="centerX" secondItem="Pnq-ka-PEB" secondAttribute="centerX" id="Llg-EZ-tDi"/>
                             <constraint firstItem="aKs-gq-Ups" firstAttribute="top" secondItem="9vB-88-o6j" secondAttribute="top" constant="20" id="Mx0-wT-CMV"/>
                             <constraint firstItem="Omm-HC-8ce" firstAttribute="top" secondItem="9vB-88-o6j" secondAttribute="top" constant="20" id="PNe-cc-ZRE"/>
+                            <constraint firstItem="UDi-hl-FE4" firstAttribute="centerX" secondItem="Pnq-ka-PEB" secondAttribute="centerX" id="UO7-rJ-4y7"/>
+                            <constraint firstItem="UDi-hl-FE4" firstAttribute="centerY" secondItem="Pnq-ka-PEB" secondAttribute="centerY" id="c0a-Nb-pZD"/>
                             <constraint firstItem="9vB-88-o6j" firstAttribute="trailing" secondItem="Omm-HC-8ce" secondAttribute="trailing" constant="20" id="iof-lR-qzn"/>
                         </constraints>
                     </view>
@@ -542,6 +553,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5c-1C-gyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101" y="717"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="qWC-Uw-YAh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="lRa-yl-wRJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ri-CE-7pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="1102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aQl-zC-oRw">

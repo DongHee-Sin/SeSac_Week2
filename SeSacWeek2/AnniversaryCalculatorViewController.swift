@@ -24,8 +24,19 @@ class AnniversaryCalculatorViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        
+        // DateFormatter : 알아보기 쉬운 날짜 + 시간대 (yyyy MM dd hh:mm:ss)
+        let format = DateFormatter()
+        format.dateFormat = "yyyy년 MM월 dd일"
+        
+        let result = format.string(from: Date())
+        
+        print(result, Date())    // 2022년 07월 14일 2022-07-14 03:26:20 +0000 (뒤에꺼는 영국표준시 기준으로 표시된거)
+        
+        let word = "2018년 09월 10일"
+        let dateResult = format.date(from: word)
+        print(dateResult)        // Optional(2018-09-09 15:00:00 +0000)
     }
-    
     
     
     

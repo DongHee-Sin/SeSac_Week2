@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0298DFF287FEFE90003A4BE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0298DFE287FEFE90003A4BE /* SearchViewController.swift */; };
 		D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0955ED9287D8C400083AFC2 /* EmotionType.swift */; };
 		D0AC1EA5287D213400B289EB /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */; };
 		D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD49287BA41300492918 /* AppDelegate.swift */; };
@@ -14,10 +15,17 @@
 		D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */; };
 		D0B0AD51287BA41300492918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD4F287BA41300492918 /* Main.storyboard */; };
 		D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B0AD52287BA41400492918 /* Assets.xcassets */; };
+		D0B31FBE287FAEDA00570C5D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = D0B31FBD287FAEDA00570C5D /* SideMenu */; };
+		D0B31FC1287FAFB900570C5D /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = D0B31FC0287FAFB900570C5D /* FSCalendar */; };
+		D0B31FC4287FAFD600570C5D /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = D0B31FC3287FAFD600570C5D /* TextFieldEffects */; };
+		D0B31FC6287FB21300570C5D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B31FC5287FB21300570C5D /* Search.storyboard */; };
+		D0B31FC9287FB26000570C5D /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B31FC8287FB26000570C5D /* Setting.storyboard */; };
+		D0B31FCC287FBE4300570C5D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D0B31FCB287FBE4300570C5D /* IQKeyboardManagerSwift */; };
 		D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0298DFE287FEFE90003A4BE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D0955ED9287D8C400083AFC2 /* EmotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionType.swift; sourceTree = "<group>"; };
 		D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		D0B0AD46287BA41300492918 /* SeSacWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +35,8 @@
 		D0B0AD50287BA41300492918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0B0AD52287BA41400492918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B0AD57287BA41400492918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B31FC5287FB21300570C5D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		D0B31FC8287FB26000570C5D /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B31FC4287FAFD600570C5D /* TextFieldEffects in Frameworks */,
+				D0B31FCC287FBE4300570C5D /* IQKeyboardManagerSwift in Frameworks */,
+				D0B31FBE287FAEDA00570C5D /* SideMenu in Frameworks */,
+				D0B31FC1287FAFB900570C5D /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +80,21 @@
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
 				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
+				D0B31FC7287FB25800570C5D /* New Group */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
 				D0B0AD57287BA41400492918 /* Info.plist */,
 			);
 			path = SeSacWeek2;
+			sourceTree = "<group>";
+		};
+		D0B31FC7287FB25800570C5D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D0B31FC5287FB21300570C5D /* Search.storyboard */,
+				D0B31FC8287FB26000570C5D /* Setting.storyboard */,
+				D0298DFE287FEFE90003A4BE /* SearchViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D0B3A701287E931D0051BB8E /* AppLifeCycle */ = {
@@ -97,6 +122,12 @@
 			dependencies = (
 			);
 			name = SeSacWeek2;
+			packageProductDependencies = (
+				D0B31FBD287FAEDA00570C5D /* SideMenu */,
+				D0B31FC0287FAFB900570C5D /* FSCalendar */,
+				D0B31FC3287FAFD600570C5D /* TextFieldEffects */,
+				D0B31FCB287FBE4300570C5D /* IQKeyboardManagerSwift */,
+			);
 			productName = SeSacWeek2;
 			productReference = D0B0AD46287BA41300492918 /* SeSacWeek2.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +156,12 @@
 				Base,
 			);
 			mainGroup = D0B0AD3D287BA41300492918;
+			packageReferences = (
+				D0B31FBC287FAEDA00570C5D /* XCRemoteSwiftPackageReference "SideMenu" */,
+				D0B31FBF287FAFB900570C5D /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				D0B31FC2287FAFD600570C5D /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				D0B31FCA287FBE4300570C5D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = D0B0AD47287BA41300492918 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */,
+				D0B31FC6287FB21300570C5D /* Search.storyboard in Resources */,
 				D0B0AD51287BA41300492918 /* Main.storyboard in Resources */,
+				D0B31FC9287FB26000570C5D /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */,
+				D0298DFF287FEFE90003A4BE /* SearchViewController.swift in Sources */,
 				D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */,
 				D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */,
 				D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */,
@@ -366,6 +406,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0B31FBC287FAEDA00570C5D /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		D0B31FBF287FAFB900570C5D /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D0B31FC2287FAFD600570C5D /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D0B31FCA287FBE4300570C5D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0B31FBD287FAEDA00570C5D /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B31FBC287FAEDA00570C5D /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		D0B31FC0287FAFB900570C5D /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B31FBF287FAFB900570C5D /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		D0B31FC3287FAFD600570C5D /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B31FC2287FAFD600570C5D /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		D0B31FCB287FBE4300570C5D /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B31FCA287FBE4300570C5D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0B0AD3E287BA41300492918 /* Project object */;
 }
