@@ -22,6 +22,10 @@
 		D0B31FC9287FB26000570C5D /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B31FC8287FB26000570C5D /* Setting.storyboard */; };
 		D0B31FCC287FBE4300570C5D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D0B31FCB287FBE4300570C5D /* IQKeyboardManagerSwift */; };
 		D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */; };
+		D0C6CF872880E812000266F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C6CF862880E812000266F9 /* LaunchScreen.storyboard */; };
+		D0C6CF8A2880E83D000266F9 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C6CF892880E83D000266F9 /* Transition.storyboard */; };
+		D0C6CF8C2880EFBC000266F9 /* TransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6CF8B2880EFBC000266F9 /* TransitionFirstViewController.swift */; };
+		D0C6CF8E2880FDFA000266F9 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6CF8D2880FDFA000266F9 /* TransitionSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		D0B31FC5287FB21300570C5D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		D0B31FC8287FB26000570C5D /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryCalculatorViewController.swift; sourceTree = "<group>"; };
+		D0C6CF862880E812000266F9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0C6CF892880E83D000266F9 /* Transition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
+		D0C6CF8B2880EFBC000266F9 /* TransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionFirstViewController.swift; sourceTree = "<group>"; };
+		D0C6CF8D2880FDFA000266F9 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +82,13 @@
 		D0B0AD48287BA41300492918 /* SeSacWeek2 */ = {
 			isa = PBXGroup;
 			children = (
+				D0C6CF882880E820000266F9 /* Transition */,
 				D0B3A701287E931D0051BB8E /* AppLifeCycle */,
 				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
 				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
 				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
 				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
+				D0C6CF862880E812000266F9 /* LaunchScreen.storyboard */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B31FC7287FB25800570C5D /* storyboard reference */,
 				D0B0AD52287BA41400492918 /* Assets.xcassets */,
@@ -104,6 +114,16 @@
 				D0B0AD4B287BA41300492918 /* SceneDelegate.swift */,
 			);
 			path = AppLifeCycle;
+			sourceTree = "<group>";
+		};
+		D0C6CF882880E820000266F9 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6CF892880E83D000266F9 /* Transition.storyboard */,
+				D0C6CF8B2880EFBC000266F9 /* TransitionFirstViewController.swift */,
+				D0C6CF8D2880FDFA000266F9 /* TransitionSecondViewController.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B0AD53287BA41400492918 /* Assets.xcassets in Resources */,
+				D0C6CF8A2880E83D000266F9 /* Transition.storyboard in Resources */,
 				D0B31FC6287FB21300570C5D /* Search.storyboard in Resources */,
 				D0B0AD51287BA41300492918 /* Main.storyboard in Resources */,
+				D0C6CF872880E812000266F9 /* LaunchScreen.storyboard in Resources */,
 				D0B31FC9287FB26000570C5D /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,11 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C6CF8C2880EFBC000266F9 /* TransitionFirstViewController.swift in Sources */,
 				D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */,
 				D0298DFF287FEFE90003A4BE /* SearchViewController.swift in Sources */,
 				D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */,
 				D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */,
 				D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */,
+				D0C6CF8E2880FDFA000266F9 /* TransitionSecondViewController.swift in Sources */,
 				D0B0AD4C287BA41300492918 /* SceneDelegate.swift in Sources */,
 				D0AC1EA5287D213400B289EB /* SegmentedViewController.swift in Sources */,
 			);
@@ -338,8 +362,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSacWeek2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Transition;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -366,8 +390,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSacWeek2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Transition;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
