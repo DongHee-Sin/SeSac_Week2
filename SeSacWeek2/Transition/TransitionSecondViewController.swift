@@ -7,32 +7,42 @@
 
 import UIKit
 
+enum UserDefaultsKey: String {
+    case nickname
+    case emotionCount
+}
+
 class TransitionSecondViewController: UIViewController {
 
-    
-    @IBOutlet weak var mottoTextView: UITextView!
     /*
      1. 앱 켜면 데이터를 가져와서 텍스트 뷰에 보여주어야 함.
      2. 바뀐 데이터를 저장해주어야 해요.
      => UserDefault
      */
     
+    // MARK: - Outlets
+    @IBOutlet weak var mottoTextView: UITextView!
+    
     @IBOutlet weak var countLabel: UILabel!
     
+    
+    
+    
+    // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TransitionSecondViewController", #function)
         
         
-        if UserDefaults.standard.string(forKey: "nickname") != nil {
+        if UserDefaults.standard.string(forKey: UserDefaultsKey.nickname.rawValue) != nil {
             // 데이터 가져오기
-            mottoTextView.text = UserDefaults.standard.string(forKey: "nickname")
+            mottoTextView.text = UserDefaults.standard.string(forKey: UserDefaultsKey.nickname.rawValue)
         }else {
             // 데이터가 없는 경우 사용할 문구
             mottoTextView.text = "고래밥"
         }
         
-        countLabel.text = "\(UserDefaults.standard.integer(forKey: "emotionCount"))"
+        countLabel.text = "\(UserDefaults.standard.integer(forKey: UserDefaultsKey.emotionCount.rawValue))"
     }
     
     
@@ -60,20 +70,22 @@ class TransitionSecondViewController: UIViewController {
     }
 
     
+    
+    
+    // MARK: - Methods
     @IBAction func saveButtonTapped(_ sender: UIButton) {
-        UserDefaults.standard.set(mottoTextView.text, forKey: "nickname")
-        print("저장되었습니다.!")
+        UserDefaults.standard.set(mottoTextView.text, forKey: UserDefaultsKey.nickname.rawValue)
     }
     
     
     
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
         // 기존 데이터 값 가져오기
-        let count = UserDefaults.standard.integer(forKey: "emotionCount") + 1
-        UserDefaults.standard.set("Bool 넣으라는데 문자열 넣어보기", forKey: "someKey")
+        let count = UserDefaults.standard.integer(forKey: UserDefaultsKey.emotionCount.rawValue) + 1
+
         // 새로운 값으로 저장
-        UserDefaults.standard.set(count, forKey: "emotionCount")
-        
+        UserDefaults.standard.set(count, forKey: UserDefaultsKey.emotionCount.rawValue)
+
         // 새로운 값으로 라벨 업데이트
         countLabel.text = "\(count)"
     }
