@@ -33,12 +33,9 @@ class TransitionSecondViewController: UIViewController {
         super.viewDidLoad()
         print("TransitionSecondViewController", #function)
         
-        
-        if UserDefaults.standard.string(forKey: UserDefaultsKey.nickname.rawValue) != nil {
-            // 데이터 가져오기
-            mottoTextView.text = UserDefaults.standard.string(forKey: UserDefaultsKey.nickname.rawValue)
+        if let nicknameValue = UserDefaults.standard.string(forKey: UserDefaultsKey.nickname.rawValue) {
+            mottoTextView.text = nicknameValue
         }else {
-            // 데이터가 없는 경우 사용할 문구
             mottoTextView.text = "고래밥"
         }
         
@@ -74,20 +71,23 @@ class TransitionSecondViewController: UIViewController {
     
     // MARK: - Methods
     @IBAction func saveButtonTapped(_ sender: UIButton) {
-        UserDefaults.standard.set(mottoTextView.text, forKey: UserDefaultsKey.nickname.rawValue)
+        saveDataToUserDefaults(mottoTextView.text ?? "", key: UserDefaultsKey.nickname)
     }
     
     
-    
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
-        // 기존 데이터 값 가져오기
+        // 기존 데이터 값 가져와서 1 더하기
         let count = UserDefaults.standard.integer(forKey: UserDefaultsKey.emotionCount.rawValue) + 1
 
         // 새로운 값으로 저장
-        UserDefaults.standard.set(count, forKey: UserDefaultsKey.emotionCount.rawValue)
+        saveDataToUserDefaults(count, key: UserDefaultsKey.emotionCount)
 
         // 새로운 값으로 라벨 업데이트
         countLabel.text = "\(count)"
     }
     
+    
+    func saveDataToUserDefaults(_ value: Any, key: UserDefaultsKey) {
+        UserDefaults.standard.set(value, forKey: key.rawValue)
+    }
 }
