@@ -72,6 +72,7 @@ class TransitionSecondViewController: UIViewController {
     // MARK: - Methods
     @IBAction func saveButtonTapped(_ sender: UIButton) {
         saveDataToUserDefaults(mottoTextView.text ?? "", key: UserDefaultsKey.nickname)
+        presentAlert("저장되었습니다")
     }
     
     
@@ -89,5 +90,13 @@ class TransitionSecondViewController: UIViewController {
     
     func saveDataToUserDefaults(_ value: Any, key: UserDefaultsKey) {
         UserDefaults.standard.set(value, forKey: key.rawValue)
+    }
+    
+    
+    func presentAlert(_ text: String) {
+        let alertController = UIAlertController(title: text, message: nil, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "확인", style: .default)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true)
     }
 }
