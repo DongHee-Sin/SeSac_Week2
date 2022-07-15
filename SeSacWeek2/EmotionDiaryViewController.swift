@@ -26,7 +26,11 @@ class EmotionDiaryViewController: UIViewController {
         setupUI()
     }
 
-
+    override func viewWillDisappear(_ animated: Bool) {
+        for (key, emotionType) in zip(EmotionType.allCases, emotionList) {
+            UserDefaults.standard.set(emotionType.emotionCount, forKey: key.rawValue)
+        }
+    }
     
     // MARK: - Methods
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
@@ -40,6 +44,14 @@ class EmotionDiaryViewController: UIViewController {
     }
     
     
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
+        for index in 0..<emotionList.count {
+            emotionList[index].resetCount()
+        }
+        updateLabelText()
+    }
+    
+    
     func setupUI() {
         emotionalLabelList.forEach({
             $0.adjustsFontSizeToFitWidth = true
@@ -47,13 +59,13 @@ class EmotionDiaryViewController: UIViewController {
         })
         
         EmotionType.allCases.forEach({
-            let emotion = Emotion(title: $0.rawValue)
+            let emotion = Emotion(title: $0.rawValue, count: UserDefaults.standard.integer(forKey: $0.rawValue))
             emotionList.append(emotion)
         })
         
         addTag(emotionButtonList)
         
-        settingLabelText()
+        updateLabelText()
     }
     
     
@@ -64,7 +76,7 @@ class EmotionDiaryViewController: UIViewController {
     }
     
     
-    func settingLabelText() {
+    func updateLabelText() {
         for (index, label) in emotionalLabelList.enumerated() {
             label.text = getLabelTextByIndex(index)
         }

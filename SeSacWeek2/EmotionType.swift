@@ -22,13 +22,18 @@ enum EmotionType: String, CaseIterable {
 
 struct Emotion {
     let emotionTitle: String
-    var emotionCount: Int = 0
+    var emotionCount: Int
     
-    init(title: String) {
+    init(title: String, count: Int) {
         self.emotionTitle = title
+        self.emotionCount = count
     }
     
     mutating func increasingCount() {
         emotionCount += 1
+    }
+    
+    mutating func resetCount() {
+        emotionCount = 0
     }
 }
