@@ -19,7 +19,7 @@ class EmotionDiaryViewController: UIViewController {
     
     
     
-    // MARK: - View Did Load
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

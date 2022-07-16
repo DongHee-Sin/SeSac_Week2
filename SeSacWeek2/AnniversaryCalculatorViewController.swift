@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum AnniversaryKey: String {
+    case anniversary
+}
+
 class AnniversaryCalculatorViewController: UIViewController {
 
     // MARK: - Propertys
@@ -26,11 +30,18 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     
     
-    // MARK: - View Did Load
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let dateString = dateToString(datePicker.date)
+        UserDefaults.standard.set(dateString, forKey: AnniversaryKey.anniversary.rawValue)
+        print("")
     }
     
     
@@ -48,6 +59,15 @@ class AnniversaryCalculatorViewController: UIViewController {
         dateFormatter.dateFormat = "yyyy년\nMM월 dd일"
         
         datePickerValueChanged(datePicker)
+        
+        // 1. 저장된 Day값 가져오기
+        // 2. Date Picker값 변경하기
+        // 3. 라벨 돌면서 100일씩 더해준 값 입력하기
+        if let dateString = UserDefaults.standard.string(forKey: AnniversaryKey.anniversary.rawValue), let date = stringToDate(dateString) {
+            datePicker.date = date
+            updateAnniversaryLabel(by: date)
+        }
+        
     }
     
     
@@ -107,7 +127,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
-    func StringToDate(_ string: String) -> Date? {
+    func stringToDate(_ string: String) -> Date? {
         return dateFormatter.date(from: string)
     }
     
@@ -117,12 +137,17 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
-    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
-        var date: Date = sender.date
+    func updateAnniversaryLabel(by date: Date) {
+        var date = date
         
         anniversaryLabelList.forEach({
             date = add100Day(date)
             $0.text = dateToString(date)
         })
+    }
+    
+    
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        updateAnniversaryLabel(by: sender.date)
     }
 }
