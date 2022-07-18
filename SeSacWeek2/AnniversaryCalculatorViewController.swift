@@ -100,6 +100,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     func settingDatePicker(_ picker: UIDatePicker) {
         if #available(iOS 14.0, *) {
             picker.preferredDatePickerStyle = .inline
+            picker.datePickerMode = .date
         }
     }
     
