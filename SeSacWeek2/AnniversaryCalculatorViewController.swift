@@ -17,6 +17,20 @@ class AnniversaryCalculatorViewController: UIViewController {
     // MARK: - Propertys
     let dateFormatter = DateFormatter()
     
+    // DatePicker의 Date값을 문자열로 get-set하는 연산 프로퍼티 연습
+    var currentSelectedDateString: String {
+        get {
+            return dateFormatter.string(from: datePicker.date)
+        }
+        set {
+            if let date = dateFormatter.date(from: newValue) {
+                datePicker.date = date
+            }
+        }
+    }
+    
+    
+    
     
     
     // MARK: - Outlet

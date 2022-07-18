@@ -25,13 +25,21 @@ class EmotionDiaryViewController: UIViewController {
         
         setupUI()
     }
-
-    // 화면이 내려갈 때, 현재 Emotion들 Count값 저장
-    override func viewWillDisappear(_ animated: Bool) {
+    
+    
+    // 피드백1 : 보통 데이터 처리는 화면이 완벽하게 사라진 후 또는 나타나는 시점이 끝난 후 처리한다. (피드백 전에는 viewWillDisappear에 작성)
+    // 현재 작성된 UserDefaults에 데이터를 저장하는 코드가 경우에 따라 viewDidDisappear에서만 정상적으로 동작하는 케이스가 있다.
+    // 나중에 더 많은 데이터를 처리할 때, 이 부분을 꼭 기억해 두었다가 잘 처리하기..!!
+    override func viewDidDisappear(_ animated: Bool) {
+        // 피드백2 : super 메서드 호출 누락..!!
+        // ⭐️⚠️ 생명주기 메서드 재정의할 때, super 메서드 호출하기 !!!!! 이걸 빼먹네;;..ㅠ
+        super.viewDidDisappear(animated)
+        
         for (key, emotionType) in zip(EmotionType.allCases, emotionList) {
             UserDefaults.standard.set(emotionType.emotionCount, forKey: key.rawValue)
         }
     }
+    
     
     // MARK: - Methods
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
