@@ -26,6 +26,7 @@ class EmotionDiaryViewController: UIViewController {
         setupUI()
     }
 
+    // 화면이 내려갈 때, 현재 Emotion들 Count값 저장
     override func viewWillDisappear(_ animated: Bool) {
         for (key, emotionType) in zip(EmotionType.allCases, emotionList) {
             UserDefaults.standard.set(emotionType.emotionCount, forKey: key.rawValue)
@@ -39,11 +40,10 @@ class EmotionDiaryViewController: UIViewController {
         emotionList[index].increasingCount()
         
         emotionalLabelList[index].text = getLabelTextByIndex(index)
-        
-        //showAlertController()
     }
     
     
+    // 모든 Emotion Count 초기화
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         for index in 0..<emotionList.count {
             emotionList[index].resetCount()
@@ -58,6 +58,7 @@ class EmotionDiaryViewController: UIViewController {
             $0.minimumScaleFactor = 0.5
         })
         
+        // 열거형 case 리스트를 사용하여 emotion 인스턴스 생성 후, 배열에 저장
         EmotionType.allCases.forEach({
             let emotion = Emotion(title: $0.rawValue, count: UserDefaults.standard.integer(forKey: $0.rawValue))
             emotionList.append(emotion)
@@ -75,14 +76,14 @@ class EmotionDiaryViewController: UIViewController {
         }
     }
     
-    
+    // 모든 emotion Label Title 업데이트
     func updateLabelText() {
         for (index, label) in emotionalLabelList.enumerated() {
             label.text = getLabelTextByIndex(index)
         }
     }
     
-    
+    // index를 매개변수로 받고, 해당 index의 Label에 맞는 문자열 반환
     func getLabelTextByIndex(_ index: Int) -> String {
         return "\(emotionList[index].emotionTitle) \(emotionList[index].emotionCount)"
     }

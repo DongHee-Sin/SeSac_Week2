@@ -7,6 +7,7 @@
 
 import UIKit
 
+// UserDefaults Key
 enum AnniversaryKey: String {
     case anniversary
 }
@@ -25,6 +26,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // 현재 선택된 날짜 기준으로 +100, 200, 300, 400을 보여주는 Label Collection
     @IBOutlet var anniversaryLabelList: [UILabel]!
     
     
@@ -38,6 +40,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
+    // 화면이 내려갈 때, 현재 선택된 Date값 저장
     override func viewWillDisappear(_ animated: Bool) {
         let dateString = dateToString(datePicker.date)
         UserDefaults.standard.set(dateString, forKey: AnniversaryKey.anniversary.rawValue)
@@ -71,7 +74,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
-    // Label 설정
+    // Label UI 설정
     func settingLabel(_ label: UILabel) {
         label.textAlignment = .center
         label.numberOfLines = 2
@@ -79,7 +82,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
-    // 이미지 설정
+    // 이미지 UI 설정
     func settingImage(_ image: UIImageView) {
         image.transform = image.transform.rotated(by: .pi / 2)
         image.layer.cornerRadius = image.frame.height / 8
@@ -96,7 +99,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
-    // Date Picker 설정
+    // iOS버전 대응하여 Date Picker 설정
     func settingDatePicker(_ picker: UIDatePicker) {
         if #available(iOS 14.0, *) {
             picker.preferredDatePickerStyle = .inline
@@ -123,21 +126,25 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
+    // Date -> String 타입 변환
     func dateToString(_ date: Date) -> String {
         return dateFormatter.string(from: date)
     }
     
     
+    // String -> Date 타입 변환
     func stringToDate(_ string: String) -> Date? {
         return dateFormatter.date(from: string)
     }
     
     
+    // 매개변수로 입력된 Date값 기준 100일 추가하여 반환
     func add100Day(_ date: Date) -> Date {
         return date.addingTimeInterval(60 * 60 * 24 * 100)
     }
     
     
+    // 매개변수로 입력된 Date값 기준으로 기념일 Label 업데이트 (+100, 200, 300, 400)
     func updateAnniversaryLabel(by date: Date) {
         var date = date
         
