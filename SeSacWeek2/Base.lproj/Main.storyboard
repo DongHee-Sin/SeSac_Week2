@@ -477,6 +477,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="기념일 계산기" image="pencil.circle" catalog="system" id="RSG-mC-YgO"/>
                     <connections>
+                        <outlet property="after100DateLabel" destination="w1l-og-igM" id="lKc-19-xqV"/>
+                        <outlet property="after200DateLabel" destination="bnf-Wc-ApP" id="ZQv-f4-x25"/>
+                        <outlet property="after300DateLabel" destination="L39-Dr-oEb" id="YVk-qO-mPQ"/>
+                        <outlet property="after400DateLabel" destination="W2x-Hz-zkA" id="XXC-RO-ZQG"/>
                         <outlet property="datePicker" destination="APD-Ld-qh8" id="9GZ-K8-sZ1"/>
                         <outletCollection property="imageList" destination="a0X-83-fWd" collectionClass="NSMutableArray" id="Q1M-F3-xJS"/>
                         <outletCollection property="imageList" destination="gzp-j8-MBe" collectionClass="NSMutableArray" id="QJS-dc-AcF"/>
@@ -486,10 +490,6 @@
                         <outletCollection property="forShadowViewList" destination="rZm-MB-yrr" collectionClass="NSMutableArray" id="kqA-bW-gM3"/>
                         <outletCollection property="forShadowViewList" destination="v7t-Jf-2zj" collectionClass="NSMutableArray" id="NZE-ip-WUb"/>
                         <outletCollection property="forShadowViewList" destination="y44-ES-ukQ" collectionClass="NSMutableArray" id="g24-Lb-QPL"/>
-                        <outletCollection property="anniversaryLabelList" destination="w1l-og-igM" collectionClass="NSMutableArray" id="UEN-H0-aqr"/>
-                        <outletCollection property="anniversaryLabelList" destination="bnf-Wc-ApP" collectionClass="NSMutableArray" id="VM4-Fo-9ct"/>
-                        <outletCollection property="anniversaryLabelList" destination="L39-Dr-oEb" collectionClass="NSMutableArray" id="0zg-Hq-339"/>
-                        <outletCollection property="anniversaryLabelList" destination="W2x-Hz-zkA" collectionClass="NSMutableArray" id="kBM-Ce-zGt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewC-7a-4EV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

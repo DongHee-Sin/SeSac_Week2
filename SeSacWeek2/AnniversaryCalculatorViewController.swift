@@ -40,10 +40,11 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    // 현재 선택된 날짜 기준으로 +100, 200, 300, 400을 보여주는 Label Collection
-    @IBOutlet var anniversaryLabelList: [UILabel]!
-    
-    
+    // 현재 선택된 날짜 기준으로 +100, 200, 300, 400을 보여주는 Label
+    @IBOutlet weak var after100DateLabel: UILabel!
+    @IBOutlet weak var after200DateLabel: UILabel!
+    @IBOutlet weak var after300DateLabel: UILabel!
+    @IBOutlet weak var after400DateLabel: UILabel!
     
     
     // MARK: - Life Cycle
@@ -65,7 +66,7 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     // MARK: - Methods
     func setupUI() {
-        anniversaryLabelList.forEach({ settingLabel($0) })
+        [after100DateLabel, after200DateLabel, after300DateLabel, after400DateLabel].forEach({ settingLabel($0) })
         
         imageList.forEach({ settingImage($0) })
         
@@ -153,19 +154,17 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     
     // 매개변수로 입력된 Date값 기준 100일 추가하여 반환
-    func add100Day(_ date: Date) -> Date {
-        return date.addingTimeInterval(60 * 60 * 24 * 100)
+    func addDay(_ date: Date, additional: TimeInterval) -> Date {
+        return date.addingTimeInterval(60 * 60 * 24 * additional)
     }
     
     
     // 매개변수로 입력된 Date값 기준으로 기념일 Label 업데이트 (+100, 200, 300, 400)
     func updateAnniversaryLabel(by date: Date) {
-        var date = date
-        
-        anniversaryLabelList.forEach({
-            date = add100Day(date)
-            $0.text = dateToString(date)
-        })
+        after100DateLabel.text = dateToString(addDay(date, additional: 100))
+        after200DateLabel.text = dateToString(addDay(date, additional: 200))
+        after300DateLabel.text = dateToString(addDay(date, additional: 300))
+        after400DateLabel.text = dateToString(addDay(date, additional: 400))
     }
     
     
