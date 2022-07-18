@@ -30,6 +30,33 @@ class AnniversaryCalculatorViewController: UIViewController {
     }
     
     
+    var after100Date: Date {
+        get {
+            if let date = dateFormatter.date(from: after100DateLabel.text!) {
+                return date
+            }else {
+                return Date()
+            }
+        }
+        set {
+            // 입력된 Date를 문자열로 변환하여 Label.text 업데이트
+            after100DateLabel.text = dateFormatter.string(from: newValue)
+        }
+    }
+    
+    var after200Date: Date {
+        get {
+            if let date = dateFormatter.date(from: after200DateLabel.text!) {
+                return date
+            }else {
+                return Date()
+            }
+        }
+        set {
+            // 입력된 Date를 문자열로 변환하여 Label.text 업데이트
+            after200DateLabel.text = dateFormatter.string(from: newValue)
+        }
+    }
     
     
     
@@ -45,6 +72,8 @@ class AnniversaryCalculatorViewController: UIViewController {
     @IBOutlet weak var after200DateLabel: UILabel!
     @IBOutlet weak var after300DateLabel: UILabel!
     @IBOutlet weak var after400DateLabel: UILabel!
+    
+    
     
     
     // MARK: - Life Cycle
@@ -161,8 +190,9 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     // 매개변수로 입력된 Date값 기준으로 기념일 Label 업데이트 (+100, 200, 300, 400)
     func updateAnniversaryLabel(by date: Date) {
-        after100DateLabel.text = dateToString(addDay(date, additional: 100))
-        after200DateLabel.text = dateToString(addDay(date, additional: 200))
+        after100Date = addDay(date, additional: 100)
+        after200Date = addDay(date, additional: 200)
+        
         after300DateLabel.text = dateToString(addDay(date, additional: 300))
         after400DateLabel.text = dateToString(addDay(date, additional: 400))
     }
