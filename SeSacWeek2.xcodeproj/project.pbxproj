@@ -63,6 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D086934628867B830003FF88 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
+				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
+				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		D0B0AD3D287BA41300492918 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +94,8 @@
 			children = (
 				D0C6CF882880E820000266F9 /* Transition */,
 				D0B3A701287E931D0051BB8E /* AppLifeCycle */,
-				D0B0AD4D287BA41300492918 /* EmotionDiaryViewController.swift */,
+				D086934628867B830003FF88 /* ViewController */,
 				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
-				D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */,
-				D0B3A702287E981F0051BB8E /* AnniversaryCalculatorViewController.swift */,
 				D0C6CF862880E812000266F9 /* LaunchScreen.storyboard */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B31FC7287FB25800570C5D /* storyboard reference */,

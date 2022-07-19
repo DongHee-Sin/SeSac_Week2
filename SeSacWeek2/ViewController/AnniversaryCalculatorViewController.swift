@@ -85,10 +85,11 @@ class AnniversaryCalculatorViewController: UIViewController {
     
     
     // 화면이 내려갈 때, 현재 선택된 Date값 저장
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
         let dateString = dateToString(datePicker.date)
         UserDefaults.standard.set(dateString, forKey: AnniversaryKey.anniversary.rawValue)
-        print("")
     }
     
     
