@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0298DFF287FEFE90003A4BE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0298DFE287FEFE90003A4BE /* SearchViewController.swift */; };
+		D06348222886F9E3000A9D59 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06348212886F9E3000A9D59 /* UserDefaultsManager.swift */; };
 		D0955EDA287D8C400083AFC2 /* EmotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0955ED9287D8C400083AFC2 /* EmotionType.swift */; };
 		D0AC1EA5287D213400B289EB /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */; };
 		D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0AD49287BA41300492918 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		D0298DFE287FEFE90003A4BE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D06348212886F9E3000A9D59 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		D0955ED9287D8C400083AFC2 /* EmotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionType.swift; sourceTree = "<group>"; };
 		D0AC1EA4287D213400B289EB /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		D0B0AD46287BA41300492918 /* SeSacWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSacWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				D0B3A701287E931D0051BB8E /* AppLifeCycle */,
 				D086934628867B830003FF88 /* ViewController */,
 				D0955ED9287D8C400083AFC2 /* EmotionType.swift */,
+				D06348212886F9E3000A9D59 /* UserDefaultsManager.swift */,
 				D0C6CF862880E812000266F9 /* LaunchScreen.storyboard */,
 				D0B0AD4F287BA41300492918 /* Main.storyboard */,
 				D0B31FC7287FB25800570C5D /* storyboard reference */,
@@ -226,6 +229,7 @@
 				D0B3A703287E981F0051BB8E /* AnniversaryCalculatorViewController.swift in Sources */,
 				D0B0AD4E287BA41300492918 /* EmotionDiaryViewController.swift in Sources */,
 				D0B0AD4A287BA41300492918 /* AppDelegate.swift in Sources */,
+				D06348222886F9E3000A9D59 /* UserDefaultsManager.swift in Sources */,
 				D0C6CF8E2880FDFA000266F9 /* TransitionSecondViewController.swift in Sources */,
 				D0B0AD4C287BA41300492918 /* SceneDelegate.swift in Sources */,
 				D0AC1EA5287D213400B289EB /* SegmentedViewController.swift in Sources */,

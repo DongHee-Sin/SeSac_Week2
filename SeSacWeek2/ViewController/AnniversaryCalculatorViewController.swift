@@ -88,8 +88,11 @@ class AnniversaryCalculatorViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        let dateString = dateToString(datePicker.date)
-        UserDefaults.standard.set(dateString, forKey: AnniversaryKey.anniversary.rawValue)
+//        let dateString = dateToString(datePicker.date)
+//        UserDefaults.standard.set(dateString, forKey: AnniversaryKey.anniversary.rawValue)
+        
+        // Property Wrapper 사용
+        UserDefaultManager.shared.anniversaryDateKey = datePicker.date
     }
     
     
@@ -111,11 +114,15 @@ class AnniversaryCalculatorViewController: UIViewController {
         // 1. 저장된 Day값 가져오기
         // 2. Date Picker값 변경하기
         // 3. 라벨 돌면서 100일씩 더해준 값 입력하기
-        if let dateString = UserDefaults.standard.string(forKey: AnniversaryKey.anniversary.rawValue), let date = stringToDate(dateString) {
-            datePicker.date = date
-            updateAnniversaryLabel(by: date)
-        }
+//        if let dateString = UserDefaults.standard.string(forKey: AnniversaryKey.anniversary.rawValue), let date = stringToDate(dateString) {
+//            datePicker.date = date
+//            updateAnniversaryLabel(by: date)
+//        }
         
+        // Property Wrapper 사용
+        let savedDate = UserDefaultManager.shared.anniversaryDateKey
+        datePicker.date = savedDate
+        updateAnniversaryLabel(by: savedDate)
     }
     
     
